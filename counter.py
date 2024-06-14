@@ -16,7 +16,7 @@ print(_result)
 result = str(_result)
 print(result)
 
-"""
+'''
 parsing code
 
 "mon date hour min"
@@ -43,7 +43,7 @@ s3 = '- 12312.. - 9'
 result = "6 9 14"
 ## data = [int(x) for x in re.findall(r'\d+', result)]
 => [6, 9, 14]
-"""
+'''
 
 _data = [int(x) for x in re.findall(r'\d+', result)]
 print(str(_data)+"  "+str(len(_data)))

@@ -67,10 +67,10 @@ if data["month"] < 1:
  data["month"] = data["month"] + 1
 
 result_month = data["month"] - time_today.tm_mon
-result_day = data["date"] - time_today.tm_mday
+result_date = data["date"] - time_today.tm_mday
 result_hour = data["hour"] - time_today.tm_hour
 result_min = data["minute"] - time_today.tm_min
 
-dDay = [result_month, result_day, result_hour, result_min]
+dDay = [result_month, result_date, result_hour, result_min]
 print(dDay)
-print(str(dDay[1]*12-dDay[2])+' hours lefts')
+print(str(result_month * 30 + result_date)+" Date lefts.")
